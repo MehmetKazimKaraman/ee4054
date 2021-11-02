@@ -12,6 +12,9 @@ class Canvas(FigureCanvas):
         super().__init__(fig)
         self.setParent(parent)
 
+        
+        
+        
         self.canvas = FigureCanvas(self.figure)
         self.toolbar = NavigationToolbar(self.canvas, self)
 
