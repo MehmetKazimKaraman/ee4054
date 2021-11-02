@@ -11,6 +11,9 @@ class Canvas(FigureCanvas):
         fig, self.ax = plt.subplots(figsize=(12, 8), dpi=100)
         super().__init__(fig)
         self.setParent(parent)
+        
+        
+        
 
         self.canvas = FigureCanvas(self.figure)
         self.toolbar = NavigationToolbar(self.canvas, self)
